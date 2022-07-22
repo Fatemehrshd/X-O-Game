@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Fatemeh Rashidi">
+        <meta name="description" content="TicTacToe game">
+        <meta name="keywords" content="tictactoe, game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="score_board">
+            <p>Scores</p>
+            <button type="button" class="scores" id="X">X: <b id="x_score">0</b></button>
+            <button type="button" class="scores" id="O">O: <b id="o_score">0</b></button>
+            <button type="button" class="scores" id="D">Draw: <b id="draw_score">0</b></button>
+        </div>
+
+        <div id="game_board">
+            <table>
+                <tr>
+                    <td>
+                        <button onclick="clicked(0, 0)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(0, 1)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(0, 2)" class="cell"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clicked(1, 0)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(1, 1)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(1, 2)" class="cell"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clicked(2, 0)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(2, 1)" class="cell"></button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(2, 2)" class="cell"></button>
+                    </td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="select">
+            <input type="radio" class="choice" id="pp"><label>player1 vs. player 2</label>
+            <input type="radio" class="choice" id="pc"><label>player vs. cpu</label>
+            <br>
+            <button type="button" onclick="game_over()" id="new_game">New Game</button>
+        </div>
+
+
+        <div id="display_result">
+            <p><b id="winner">Result</b></p>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

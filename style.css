@@ -1,0 +1,124 @@
+body {
+    background-image: url("new.jpg");
+    background-repeat:no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#game_board {
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+    left: 25%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(96, 96, 119);
+    text-align: center;
+    font-size: 50px;
+    color: rgb(34, 29, 58);
+    background: rgba(255, 255, 255, 0.31);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 01px solid rgba(255, 255, 255, 0.06);
+    box-sizing: border-box;
+    display: block;
+
+}
+
+#score_board {
+    height: 300px;
+    width: 70px;
+    position: relative;
+    top: 135px;
+    left: 17%;
+}
+
+#score_board p {
+    background-color: rgb(57, 66, 169);
+    height: 25px;
+    width: 100px;
+    border-style: none;
+    text-align: center;
+    margin-left: 3px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+}
+
+.scores {
+    height: 25px;
+    width: 100px;
+    background-color: rgb(82, 113, 185);
+    border-style: none;
+    margin: 2px;
+    text-align: left;
+    margin-left: 3px;
+    background: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+}
+
+#select {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(75, 103, 152);
+    text-align: left;
+    border-style: none;
+    text-align: center;
+    position: relative;
+    left: 1.35%;
+    top: 470px;
+    background: rgba( 255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    
+}
+
+#new_game {
+    height: 30px;
+    width: 100px;
+    border-style: none;
+    background-color: rgb(169, 173, 190);
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+}
+
+#display_result {
+    width: 200px;
+    height: 60px;
+}
+
+#display_result {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border-style: none;
+    position: relative;
+    left: -18.3%;
+    top: 70px;
+    text-align: center;
+    color: white;
+}
+
+#winner {
+    font-size: 18px;
+}
